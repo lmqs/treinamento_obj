@@ -25,8 +25,7 @@ export class Carrinho {
   }
 
   removerItem(deleteItemModel: IDeleteItemModel) {
-    const {produto, carrinho, quantidade} =  deleteItemModel
-    this.remove.removerItem({produto,carrinho,quantidade})
+    this.remove.removerItem(deleteItemModel)
   }
 
   valorTotalCompras(carrinho: ICarrinho): number{
